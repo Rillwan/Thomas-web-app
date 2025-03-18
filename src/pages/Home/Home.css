@@ -1,0 +1,45 @@
+/* Hero section  */
+.Hero-section {
+    background-position: center;
+    background-size: cover;
+    /* box-shadow: inset 0px -100px 100px rgb(0, 0, 0); */
+    position: relative;
+    z-index: 10;
+}
+
+.Hero-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(36, 36, 36);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(6, 6, 6, 0.5) 40%, rgba(6, 6, 6,0.9) 70%, rgba(6, 6, 6) 80%, rgb(0, 0, 0) 90%);
+    opacity: 1;
+    z-index: -1;
+}
+
+
+/* Work section  */
+.HomePage .Work-section .cards {
+    position: relative;
+}
+
+.HomePage .Work-section .card {
+    background: rgb(36, 36, 36);
+    background: linear-gradient(9deg, rgb(0, 0, 0) 0%, rgb(66, 66, 66) 100%);
+}
+
+/* Line  */
+.HomePage .Work-section .cards::after {
+    content: "";
+    width: 8px;
+    height: calc(100% - 20px);
+    background-color: var(--color-white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+}

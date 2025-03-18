@@ -1,0 +1,121 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+  display: block;
+  font-family: inherit;
+  text-wrap: nowrap;
+  -webkit-tap-highlight-color: transparent;
+}
+
+input {
+  width: 100%;
+  font-family: inherit;
+  padding: 10px 20px;
+  letter-spacing: 1px;
+  font-size: 12px;
+  background: transparent;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px var(--color-white) inset !important;
+  -webkit-text-fill-color: var(--color-dark) !important;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  font-family: inherit;
+  padding: 10px 20px;
+  letter-spacing: 1px;
+  font-size: 12px;
+  background: transparent;
+}
+
+svg {
+  display: block;
+}
+
+/* ------------- GLOBAL STYLES -----------  */
+.btn {
+  cursor: pointer;
+  text-align: center;
+  padding: 0.6rem 1.4rem;
+  text-wrap: nowrap;
+  font-family: var(--font-family);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  opacity: 0.8;
+  transform: translateY(-4px);
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 5rem;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--color-primary);
+  border-radius: 5rem;
+  color: var(--color-primary);
+  /* background-color: var(--color-white); */
+}
+
+/* ------------------------------------------------------------ */
+/* ---------------------------------------------------------- */
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+}
+
+/* ---------------------------- PAGE ---------------------------------- */
+.Page{
+  width: 100vw;
+  min-height: 100vh;
+  padding-block:5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .Page{
+    padding-block:4rem;
+  }
+}
+
+/* ------------------------------------- SECTION ----------------------------------------- */
+.section {
+  width: 100%;
+  padding-block: 2rem;
+}
+
+@media screen and (max-width: 960px) {
+  .section {
+    padding-block: 1rem;
+  }
+}

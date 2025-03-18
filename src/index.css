@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: rgb(12, 12, 12);
+  --color-secondary: rgb(48, 48, 48);
+  --color-light: rgb(224, 236, 252);
+  --color-dark: rgb(78, 78, 78);
+  --color-white: rgb(255, 255, 255);
+  --color-black: rgb(0, 0, 0);
+
+  --font-family: "DM Sans", sans-serif;
+
+  --card-padding: 1rem;
+
+  --nav-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.3);
+  --md-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --lg-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  --transition: all 400ms ease;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--color-white);
+  background: var(--color-black);
+  transition: var(--transition);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: normal;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* ----------- Tailwind Add Extra CSS Styles -------------  */
+@layer base {
+  .custom-text-dark {
+    color: var(--color-dark);
+  }
+
+  .custom-bg-dark {
+    color: var(--color-dark);
+  }
+
+  .custom-text-primary {
+    color: var(--color-primary);
+  }
+
+  .custom-bg-primary {
+    background-color: var(--color-primary);
+  }
+
+  .custom-transition {
+    transition: var(--transition);
+  }
+
+  .text-outline {
+    -webkit-text-stroke: 1.8px var(--color-primary);
+    font-family: var(--font-family-secondary);
+    color: transparent;
+    transition: var(--transition);
+  }
+
+  .text-outline-hover {
+    -webkit-text-stroke: 1px var(--color-primary);
+    color: var(--color-primary);
+  }
+
+  .custom-bg-secondary{
+    background-color: var(--color-secondary);
+  }
+
+  .custom-text-secondary{
+    color: var(--color-secondary);
+  }
+
+  .custom-hover-effect:hover{
+    transition: var(--transition);
+    opacity: 0.7;
+  }
+
+  .custom-hover-effect-move:hover{
+    transition: var(--transition);
+    transform: translateY(-5px);
+    opacity: 0.7;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .text-outline {
+    -webkit-text-stroke: 1px var(--color-primary);
+  }
+}
