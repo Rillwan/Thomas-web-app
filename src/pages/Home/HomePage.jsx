@@ -4,12 +4,14 @@ import About from './About'
 import Work from './Work'
 import './Home.css'
 import Contact from './Contact'
+import HeroSecond from './HeroSecond'
 
 const HomePage = () => {
     return (
         <div className="HomePage">
             {/* HERO SECTION  */}
-            <Hero />
+            {/* <Hero /> */}
+            <HeroSecond />
             {/* ABOUT SECTION  */}
             <About />
             {/* WORK SECTION  */}

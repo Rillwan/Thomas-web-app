@@ -1,13 +1,19 @@
 /* Hero section  */
 .Hero-section {
-    background-position: center;
-    background-size: cover;
+    /* Hero - first enable  */
+    /* background-position: center; */ 
+    /* background-size: cover; */
+    /* hero - second  */
+    background-position: 0 0, 50% 26%;
+    background-size: auto, cover;
+    background-clip: border-box;
     /* box-shadow: inset 0px -100px 100px rgb(0, 0, 0); */
     position: relative;
     z-index: 10;
 }
 
-.Hero-section::after {
+/* inner shadow (Hero - 1 enable) */
+/* .Hero-section::after {
     content: "";
     position: absolute;
     top: 0;
@@ -18,6 +24,21 @@
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(6, 6, 6, 0.5) 40%, rgba(6, 6, 6,0.9) 70%, rgba(6, 6, 6) 80%, rgb(0, 0, 0) 90%);
     opacity: 1;
     z-index: -1;
+} */
+
+/* hero - second style  */
+@media screen and (max-width:991px) {
+    .Hero-section {
+        background-size: auto, 1300px;
+    }
+    
+}
+
+@media screen and (max-width:476px) {
+    .Hero-section {
+        background-size: auto, 1000px;
+    }
+    
 }
 
 

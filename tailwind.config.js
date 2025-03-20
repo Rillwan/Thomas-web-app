@@ -18,6 +18,7 @@ export default {
       // spacing: {},
       fontFamily: {
         DMSans: ["DM Sans", "sans-serif"],
+        PlayFair :["Playfair Display", 'serif'],
       },
       // fontSize: {},
       // fontWeight: {},

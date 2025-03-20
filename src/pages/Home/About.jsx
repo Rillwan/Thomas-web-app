@@ -5,7 +5,7 @@ const About = () => {
     const scrollRef = useRef(null);
 
     return (
-        <section className='pt-8' id="about" ref={scrollRef}>
+        <section className='pt-16' id="about" ref={scrollRef}>
             <motion.div className="container h-full">
                 <h3 className="custom-bg-secondary py-1 px-3 w-fit rounded-2xl text-sm">About</h3>
                 <motion.div className="grid gap-6 grid-cols-1 xl:grid-cols-8 mt-3"

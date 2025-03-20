@@ -27,3 +27,28 @@
 /* .NavBar {
     backdrop-filter: blur(10px);
 } */
+
+/* HEADER SECOND  */
+.NavBar-second {}
+
+@media screen and (max-width:991px){
+    .NavBar-second  .Menu-bar{
+        order: 1;
+        flex-direction: column;
+        /* border: 2px solid; */
+        background-color: var(--color-black);
+        color: var(--color-white);
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: calc(100% + 25px);
+        transition: var(--transition);
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .NavBar-second .Menu-bar.active{
+        max-height: 380px;
+        padding-block: 2.5rem;
+    }
+}
