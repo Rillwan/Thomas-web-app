@@ -3,52 +3,25 @@
     transition: var(--transition);
 }
 
-@media screen and (max-width:640px) {
-    .NavBar .Menu-bar {
-        order: 1;
-        flex-direction: column;
-        width: 100%;
-        max-height: 0;
-        margin-top: 0;
-        transition: var(--transition);
-        overflow: hidden;
-    }
-
-    .NavBar .Menu-bar .contact-btn {
-        padding: 0.5rem 1rem;
-    }
-
-    .NavBar .Menu-bar.active {
-        max-height: 150px;
-        margin-top: 1rem;
-    }
+/* Navbar Second  */
+/* Responsive-Menu  */
+.NavBar-second .Responsive-Menu{
+    position: absolute;
+    top: calc(100% + 32px);
+    left: 0;
+    /* border: 1px solid; */
+    /* height: 100%; */
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    max-height: 0;
+    transition:var(--transition);
+    overflow: hidden;
 }
 
-/* .NavBar {
-    backdrop-filter: blur(10px);
-} */
-
-/* HEADER SECOND  */
-.NavBar-second {}
-
-@media screen and (max-width:991px){
-    .NavBar-second  .Menu-bar{
-        order: 1;
-        flex-direction: column;
-        /* border: 2px solid; */
-        background-color: var(--color-black);
-        color: var(--color-white);
-        width: 100%;
-        position: absolute;
-        left: 0;
-        top: calc(100% + 25px);
-        transition: var(--transition);
-        max-height: 0;
-        overflow: hidden;
-    }
-
-    .NavBar-second .Menu-bar.active{
-        max-height: 380px;
-        padding-block: 2.5rem;
-    }
+.NavBar-second .Responsive-Menu.active{
+    max-height: 310px;
+    padding-block: 2rem;
 }

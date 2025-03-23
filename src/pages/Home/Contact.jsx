@@ -1,6 +1,5 @@
 import ContactBg from '../../assets/Images/bg-contact.png'
 import { useRef, useState } from "react"
-import { motion } from "framer-motion"
 import axios from 'axios'
 
 const InputVariants = {
@@ -50,50 +49,30 @@ const Contact = () => {
                 <div className="max-w-[500px] mx-auto mt-6" ref={scrollRef}>
                     <form onSubmit={handleSubmit}>
                         <div className="rounded-xl grid gap-[1px] overflow-hidden">
-                            <motion.input
-                                initial={"offscreen"}
-                                whileInView={"onscreen"}
-                                viewport={{ root: scrollRef }}
-                                variants={InputVariants}
+                            <input
                                 required 
                                 value={FormData?.name}
                                 onChange={(e) => setFormData({ ...FormData, name: e.target.value })}
                                 type="text" placeholder="Full Name" className="custom-bg-secondary" />
-                            <motion.input
-                                initial={"offscreen"}
-                                whileInView={"onscreen"}
-                                viewport={{ root: scrollRef }}
-                                variants={InputVariants}
+                            <input
                                 required 
                                 value={FormData?.email}
                                 onChange={(e) => setFormData({ ...FormData, email: e.target.value })}
                                 type="email" placeholder="Email" className="custom-bg-secondary" />
-                            <motion.input
-                                initial={"offscreen"}
-                                whileInView={"onscreen"}
-                                viewport={{ root: scrollRef }}
-                                variants={InputVariants}
+                            <input
                                 required 
                                 value={FormData?.subject}
                                 onChange={(e) => setFormData({ ...FormData, subject: e.target.value })}
                                 type="text" placeholder="Subject" className="custom-bg-secondary" />
-                            <motion.textarea
-                                initial={"offscreen"}
-                                whileInView={"onscreen"}
-                                viewport={{ root: scrollRef }}
-                                variants={InputVariants}
+                            <textarea
                                 required 
                                 value={FormData?.message}
                                 onChange={(e) => setFormData({ ...FormData, message: e.target.value })}
                                 placeholder="Add your message" className="custom-bg-secondary " rows={6} />
                         </div>
-                        <motion.button
-                            initial={"offscreen"}
-                            whileInView={"onscreen"}
-                            viewport={{ root: scrollRef }}
-                            variants={InputVariants}
+                        <button
                             type='submit'
-                            className="btn bg-white text-black w-full rounded-lg mt-2">Send a message</motion.button>
+                            className="btn bg-white text-black w-full rounded-lg mt-2">Send a message</button>
                     </form>
                 </div>
             </div>

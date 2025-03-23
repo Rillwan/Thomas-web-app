@@ -5,6 +5,7 @@ import Work from './Work'
 import './Home.css'
 import Contact from './Contact'
 import HeroSecond from './HeroSecond'
+import Companies from './Companies'
 
 const HomePage = () => {
     return (
@@ -12,6 +13,8 @@ const HomePage = () => {
             {/* HERO SECTION  */}
             {/* <Hero /> */}
             <HeroSecond />
+            {/* COMPANY SECTION */}
+            <Companies />
             {/* ABOUT SECTION  */}
             <About />
             {/* WORK SECTION  */}

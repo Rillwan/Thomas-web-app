@@ -10,7 +10,7 @@ const Work = () => {
         <section className='Work-section mt-20' id='work'>
             <div className="container h-full">
                 <h3 className="custom-bg-secondary py-1 px-3 w-fit rounded-2xl text-sm mx-auto">Work</h3>
-                <h4 className='text-2xl sm:text-3xl max-w-[450px] mx-auto font-normal text-center mt-4'>Discover how my early passion for tech industry evolved in to a thriving career</h4>
+                <h4 className='text-2xl sm:text-3xl max-w-[500px] mx-auto font-normal text-center mt-4 capitalize'>Discover how my early passion evolved into a thriving entrepreneurial career</h4>
                 {/* CARDS  */}
                 <div className="cards grid grid-cols-1 gap-28 mt-8 max-w-[500px] mx-auto" ref={scrollRef}>
                     {

@@ -17,19 +17,21 @@ const About = () => {
                     viewport={{ root: scrollRef }}
                 >
                     <div className="col-span-3">
-                        <h4 className="text-3xl font-normal sm:w-[300px]">From passion to profession</h4>
+                        <h4 className="text-3xl font-normal sm:w-[300px]">From Curiosity to Innovation</h4>
                     </div>
                     <div className="col-span-5">
                         <h5 className="text-xl sm:text-2xl font-normal">My journey began in 2018, when i first discovered my passion for each industry</h5>
                         <p className="mt-4">
-                            With over 5 years of experience in tech industry, I have honed my skills in tech. My
-                            journey began with an insatiable curiosity for how things work, a curiosity that led me to explore the vast world of technology.
-                            From a young age, I was captivated by computers and gadgets, spending countless hours disassembling and reassembling them to understand
-                            their inner workings. This early fascination laid the foundation for what would become a lifelong pursuit of knowledge and innovation.
+                            My journey into technology and entrepreneurship began in 2018, fueled by my passion for gaming and curiosity about how digital worlds
+                            operate. At just 15, I launched my YouTube channel, Nite Gamic, where I specialized in data-mining Fortnite's game files, uncovering
+                            hidden music and creating engaging content that attracted millions of views and thousands of followers.
                             <br /><br />
-                            Throughout my career, I have been driven by a belief in the power of collaboration and continuous growth.
-                            I firmly believe that the best results come from working together, sharing ideas, and learning from each other.
-                            This philosophy has been the cornerstone of my approach to every project I undertake.
+                            This early success sparked my deeper interest in coding and digital innovation, inspiring me to dive into software development and
+                            technology. Driven by a desire to innovate and make an impact, I founded multiple ventures, continuously expanding my skillset and entrepreneurial experience.
+                            <br /><br />
+                            I believe strongly in collaboration, continuous growth, and sharing knowledge, values that underpin every project and partnership I undertake. Today, my work 
+                            spans industries, from music and gaming to e-commerce and retail technology, always driven by a passion for innovation and delivering tangible impact.
+                            <br />
                         </p>
                     </div>
                 </motion.div>
