@@ -14,23 +14,34 @@ const InputVariants = {
 
 const Contact = () => {
     const scrollRef = useRef(null);
-    const [FormData,setFormData] = useState({
-        name:'',
-        email:'',
-        subject:'',
-        message:'',
+    const [Form, setForm] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
     })
 
     // SUBMIT CONTACT FORM DATA
-    const handleSubmit = async(e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         // API URL
-        console.log(FormData);
-        const api = '';
+        const api = 'https://server.clocheret.com/send-email';
         try {
-            const response = await axios.post(api, FormData);
+            const response = await axios.post(api,
+                {
+                    fullName: Form?.name,
+                    email: Form?.email,
+                    subject: Form?.subject,
+                    message: Form?.message
+                },
+                {
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                });
             console.log(response?.data);
             alert('Form submitted successfully');
+            setForm({ name: '', email: '', subject: '', message: '' });
         } catch (error) {
             console.log(error);
         }
@@ -50,24 +61,28 @@ const Contact = () => {
                     <form onSubmit={handleSubmit}>
                         <div className="rounded-xl grid gap-[1px] overflow-hidden">
                             <input
-                                required 
-                                value={FormData?.name}
-                                onChange={(e) => setFormData({ ...FormData, name: e.target.value })}
+                                required
+                                value={Form?.name}
+                                onChange={(e) => setForm({ ...Form, name: e.target.value })}
+                                name='name' id='name'
                                 type="text" placeholder="Full Name" className="custom-bg-secondary" />
                             <input
-                                required 
-                                value={FormData?.email}
-                                onChange={(e) => setFormData({ ...FormData, email: e.target.value })}
+                                required
+                                value={Form?.email}
+                                onChange={(e) => setForm({ ...Form, email: e.target.value })}
+                                name='email' id='email'
                                 type="email" placeholder="Email" className="custom-bg-secondary" />
                             <input
-                                required 
-                                value={FormData?.subject}
-                                onChange={(e) => setFormData({ ...FormData, subject: e.target.value })}
+                                required
+                                value={Form?.subject}
+                                onChange={(e) => setForm({ ...Form, subject: e.target.value })}
+                                name='subject'
                                 type="text" placeholder="Subject" className="custom-bg-secondary" />
                             <textarea
-                                required 
-                                value={FormData?.message}
-                                onChange={(e) => setFormData({ ...FormData, message: e.target.value })}
+                                required
+                                value={Form?.message}
+                                onChange={(e) => setForm({ ...Form, message: e.target.value })}
+                                name='message'
                                 placeholder="Add your message" className="custom-bg-secondary " rows={6} />
                         </div>
                         <button
