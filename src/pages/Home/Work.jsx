@@ -28,7 +28,7 @@ const Work = () => {
                                 <div className='grid gap-8 sm:gap-10'>
                                     <div className='flex items-center justify-between'>
                                         <img
-                                            className='rounded-full object-contain p-3 w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] bg-[#4E4E4E]'
+                                            className='rounded-full object-contain w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] bg-[#4E4E4E]'
                                             src={item?.image} alt="" />
                                         <span className='text-4xl sm:text-6xl font-medium'>{item?.year}</span>
                                     </div>
