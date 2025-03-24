@@ -12,7 +12,7 @@ const Work = () => {
                 <h3 className="custom-bg-secondary py-1 px-3 w-fit rounded-2xl text-sm mx-auto">Work</h3>
                 <h4 className='text-2xl sm:text-3xl max-w-[500px] mx-auto font-normal text-center mt-4 capitalize'>Discover how my early passion evolved into a thriving entrepreneurial career</h4>
                 {/* CARDS  */}
-                <div className="cards grid grid-cols-1 gap-28 mt-8 max-w-[500px] mx-auto" ref={scrollRef}>
+                <div className="cards grid grid-cols-1 gap-40 mt-8 max-w-[500px] mx-auto" ref={scrollRef}>
                     {
                         WorkData?.map((item, i) => (
                             <motion.div className="card rounded-xl p-4 sm:p-6" key={i}
@@ -21,7 +21,7 @@ const Work = () => {
                                  }}
                                 whileInView={{
                                     scale: 1,
-                                    transition: { delay: 0.05, duration: 0.4, ease: 'easeIn' }
+                                    transition: { delay: 0, duration: 0.3, ease: 'easeIn' }
                                 }}
                                 viewport={{ root: scrollRef }}
                             >

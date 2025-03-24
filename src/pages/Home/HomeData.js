@@ -4,6 +4,7 @@ import Work2 from '../../assets/Images/work-2.png'
 import Work3 from '../../assets/Images/work-3.png'
 import Work4 from '../../assets/Images/work-4.png'
 import Work5 from '../../assets/Images/work-5.png'
+import Work6 from '../../assets/Images/work-6.png'
 import Company1 from '../../assets/Svg/company-1.svg'
 import Company2 from '../../assets/Svg/company-2.svg'
 import Company3 from '../../assets/Svg/company-3.svg'
@@ -71,6 +72,6 @@ export const WorkData = [
     sub: "Pixel Digital",
     description: "Expanding further into digital innovation, I co-founded Pixel Digital, focusing on delivering specialized digital strategies, creative solutions, and technology-driven outcomes for businesses.",
     year: "2024",
-    image: WorkLogo1,
+    image: Work6,
   },
 ];

@@ -19,7 +19,7 @@ const Footer = () => {
                                 offset={0}
                                 className=""
                             >
-                                CLOCHERT
+                                {/* CLOCHERT */}
                             </ScrollLink>
                         </h3>
                     </div>
