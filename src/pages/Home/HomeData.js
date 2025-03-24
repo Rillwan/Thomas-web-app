@@ -69,7 +69,7 @@ export const WorkData = [
   {
     id: 6,
     title: "Co-Founder",
-    sub: "Pixel Digital",
+    sub: "Merops Agency",
     description: "Expanding further into digital innovation, I co-founded Pixel Digital, focusing on delivering specialized digital strategies, creative solutions, and technology-driven outcomes for businesses.",
     year: "2024",
     image: Work6,

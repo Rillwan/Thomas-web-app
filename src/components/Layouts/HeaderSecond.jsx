@@ -3,7 +3,8 @@ import { Link as ScrollLink } from "react-scroll"
 import Toggle from "../../assets/Svg/Toggle/Toggle"
 import './Styles/Header.css'
 import { motion } from "framer-motion"
-import Logo from '../../assets/Svg/Logo/Logo'
+// import Logo from '../../assets/Svg/Logo/Logo'
+import CLogo from "../../assets/Svg/Logo/CLogo";
 
 const NavMenu = {
     left: [
@@ -43,7 +44,7 @@ const HeaderSecond = () => {
                     opacity: 1,
                 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: 1.5 }}
+                transition={{ duration: 0.4, delay: 0.8 }}
                 className="container lg:min-w-[90%] flex justify-between lg:grid grid-cols-3 place-items-center">
                 <div className="hidden font-black text-[13px] tracking-[1px] lg:grid grid-cols-2 place-items-center w-full">
                     {
@@ -76,7 +77,7 @@ const HeaderSecond = () => {
                             className="px-8 font-PlayFair w-fit mr-auto lg:mx-auto tracking-[4px]"
                             onClick={() => setToggle(false)}
                         >
-                            <Logo color={'#334155'} />
+                            <CLogo color={'#334155'} />
                             {/* CLOCHERET */}
                         </ScrollLink>
                     </h1>
