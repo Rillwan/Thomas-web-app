@@ -1,4 +1,5 @@
-import Logo from '../../assets/Svg/Logo/Logo'
+import CLogo from '../../assets/Svg/Logo/CLogo'
+// import Logo from '../../assets/Svg/Logo/Logo'
 
 const FooterSecond = () => {
     return (
@@ -6,7 +7,7 @@ const FooterSecond = () => {
             <div className="container py-16 flex items-center flex-col sm:flex-row gap-8 sm:gap-6 justify-between font-PlayFair uppercase border-0 border-t border-solid border-slate-500/50">
                 <div>
                     <h3 className="tracking-[4px] font-semibold uppercase">
-                        <Logo color={"White"} />
+                        <CLogo color={"White"} />
                     </h3>
                 </div>
                 <div>

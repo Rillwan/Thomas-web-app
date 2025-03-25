@@ -74,7 +74,7 @@ const HeaderSecond = () => {
                             duration={150}
                             spy={true}
                             offset={0}
-                            className="px-8 font-PlayFair w-fit mr-auto lg:mx-auto tracking-[4px]"
+                            className="px-4 lg:px-8 font-PlayFair w-fit mr-auto lg:mx-auto tracking-[4px]"
                             onClick={() => setToggle(false)}
                         >
                             <CLogo color={'#334155'} />
